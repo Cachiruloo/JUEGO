@@ -157,3 +157,15 @@ function animateFireworks() {
     ctx.globalAlpha = 1;
     requestAnimationFrame(animateFireworks);
 }
+
+document.getElementById("left-btn").addEventListener("click", () => {
+    window.scrollBy(-50, 0);
+});
+
+document.getElementById("right-btn").addEventListener("click", () => {
+    window.scrollBy(50, 0);
+});
+
+document.getElementById("jump-btn").addEventListener("click", () => {
+    window.scrollBy(0, 100);
+});
