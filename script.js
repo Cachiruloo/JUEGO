@@ -158,14 +158,18 @@ function animateFireworks() {
     requestAnimationFrame(animateFireworks);
 }
 
-document.getElementById("left-btn").addEventListener("click", () => {
-    window.scrollBy(-50, 0);
+let startX = 0;
+
+document.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
 });
 
-document.getElementById("right-btn").addEventListener("click", () => {
-    window.scrollBy(50, 0);
-});
+document.addEventListener("touchmove", (e) => {
+    const currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
 
-document.getElementById("jump-btn").addEventListener("click", () => {
-    window.scrollBy(0, 100);
+    if (Math.abs(diff) > 5) {
+        window.scrollBy(diff * 0.8, 0);
+        startX = currentX;
+    }
 });
