@@ -260,3 +260,19 @@ canvas#fireworks {
     font-size: 12px;
   }
 }
+
+#mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 999;
+}
+
+#mobile-controls button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+}
