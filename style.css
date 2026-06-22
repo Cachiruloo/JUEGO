@@ -261,3 +261,33 @@ canvas#fireworks {
   }
 }
 
+
+@media (max-width: 768px) {
+
+  html {
+    --b: 35px;
+    --s: 50px;
+    --t: 15px;
+  }
+
+  #heart-counter {
+    font-size: 20px;
+  }
+
+  #love-message {
+    font-size: 28px;
+  }
+
+  #love-message.final {
+    font-size: 40px;
+  }
+
+  #flower-image {
+    max-width: 220px;
+  }
+
+  html:before {
+    content: "Desliza para avanzar 👉";
+    font-size: 12px;
+  }
+}
