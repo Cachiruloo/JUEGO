@@ -226,3 +226,37 @@ canvas#fireworks {
   50% { transform: scale(1.05); } 
   100% { transform: scale(1); }
 }
+
+@media (max-width: 768px) {
+
+  html {
+    --b: 30px;
+    --s: 50px;
+    --t: 10px;
+  }
+
+  #heart-counter {
+    font-size: 22px;
+  }
+
+  #love-message {
+    font-size: 30px;
+  }
+
+  #love-message.final {
+    font-size: 40px;
+  }
+
+  #flower-image {
+    max-width: 220px;
+  }
+
+  #change-char-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  html:before {
+    font-size: 12px;
+  }
+}
