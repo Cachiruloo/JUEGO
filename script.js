@@ -18,7 +18,7 @@ const ctx = canvas.getContext('2d');
 
 let score = 0;
 
-const finalMessages = ["TE AMO", "MY LOVE", "AMOR DE MI VIDA"];
+const finalMessages = ["TE QUIERO MUCHITO", "MY LOVE", "AMOR DE MI VIDA"];
 let currentMessageIndex = 0;
 let messageLoopInterval;
 
